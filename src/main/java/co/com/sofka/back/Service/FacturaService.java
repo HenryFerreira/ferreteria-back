@@ -1,6 +1,5 @@
 package co.com.sofka.back.Service;
 
-import co.com.sofka.back.Model.Cliente;
 import co.com.sofka.back.Model.Factura;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
