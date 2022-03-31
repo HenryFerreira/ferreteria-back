@@ -20,11 +20,12 @@ public class Factura {
     private String nombreCliente;
     private String nombreEmpleado; //El empleado de la ferreteria atiende al cliente
     private List<Producto> productos;
-    private Long totalPagar;
+    private Double totalPagar;
 
     public Factura() {}
 
-    public Factura(String id, Long consecutivoFactura, Date fecha, String nombreCliente, String nombreEmpleado, List<Producto> productos, Long totalPagar) {
+    public Factura(String id, Long consecutivoFactura, Date fecha, String nombreCliente,
+                   String nombreEmpleado, List<Producto> productos, Double totalPagar) {
         this.id = id;
         this.consecutivoFactura = consecutivoFactura;
         Fecha = fecha;
@@ -58,7 +59,7 @@ public class Factura {
         return productos;
     }
 
-    public Long getTotalPagar() {
+    public Double getTotalPagar() {
         return totalPagar;
     }
 
@@ -86,7 +87,7 @@ public class Factura {
         this.productos = productos;
     }
 
-    public void setTotalPagar(Long totalPagar) {
+    public void setTotalPagar(Double totalPagar) {
         this.totalPagar = totalPagar;
     }
 
